@@ -3,8 +3,8 @@
 
 
 ### 📦 이 저장소의 구조
-windows-autotask-scripts
-    ├── excel
+windows-autotask-scripts   
+    ├── excel   
     │   └── auto_updateddate_insert.txt - 엑셀의 특정셀 변경을 감지하고 특정한 셀에 업데이트 된 날짜를 표시합니다.
-    └── windows11
+    └── windows11   
         └── more_option_disable.cmd - 윈도우 11의 '더 많은 옵션 보기'를 비활성화 합니다. (우클릭 메뉴 윈도우 10스타일로 변경)
