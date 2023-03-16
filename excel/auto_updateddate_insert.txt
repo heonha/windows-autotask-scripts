@@ -1,0 +1,16 @@
+'아래 내용을 엑셀에서 VBA 에디터 - 시트 우클릭 - 코드보기에 넣으면
+'J~K 1~500행에 있는 내용 변경시마다 자동으로 N열이 업데이트 됩니다.
+
+Private Sub Worksheet_Change(ByVal Target As Range)
+    Dim AffectedRange As Range
+    Set AffectedRange = Intersect(Target, Range("J1:K500")) 'J1:K500의 셀 범위를 대상으로 지정합니다.
+    
+    If Not AffectedRange Is Nothing Then
+        Dim cell As Range
+        For Each cell In AffectedRange
+            '날짜를 기록할 N열의 동일한 행에 대한 셀 주소를 찾습니다.
+            Cells(cell.Row, "N").Value = Format(Now, "yyyy-mm-dd")
+        Next cell
+    End If
+End Sub
+
