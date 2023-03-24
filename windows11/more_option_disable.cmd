@@ -1,8 +1,5 @@
 @echo off
 chcp 1252
-:: 이 스크립트는 윈도우11의 우클릭 메뉴를 windows10과 같이 변경합니다.
-:: This script changes right-click menu in Windows 11 to Windows 10.
-
 
 echo processing... If it takes too long, press enter. 
 
