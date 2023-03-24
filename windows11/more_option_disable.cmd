@@ -15,3 +15,4 @@ explorer
 
 echo success press any key.
 pause > nul
+exit
